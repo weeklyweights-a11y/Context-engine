@@ -150,9 +150,9 @@ flowchart TB
     A[Request with Bearer JWT] --> B[get_current_user dependency]
     B --> C[Decode JWT, extract sub, org_id, email]
     C --> D[Return current_user dict]
-    D --> E[Route handler uses current_user['org_id']]
+    D --> E[Route handler reads org_id from current_user]
     E --> F[All ES queries: filter term org_id]
-    E --> G[All indices: org_id-feedback, org_id-customers, ...]
+    E --> G[All indices: org_id-feedback, org_id-customers]
     F --> H[Organization B cannot see Organization A data]
 ```
 

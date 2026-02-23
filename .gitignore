@@ -46,3 +46,22 @@ node_modules/
 # Large media (GitHub 100MB limit)
 *.mp4
 *.mov
+
+# Internal specs and cursor/learning docs (not shipped)
+000-master.md
+010-python.md
+020-elasticsearch.md
+030-structure.md
+040-git.md
+050-data.md
+060-hackathon.md
+999-learned-memories.md
+AGENT_ARCHITECTURE_UPDATE.md
+PHASE_*_SPEC*.md
+PHASE_*_CHECKLIST*.md
+PHASE_*_VERIFICATION*.md
+PROJECT.md
+TASKS.md
+UX.md
+cursorrules
+config.yaml
